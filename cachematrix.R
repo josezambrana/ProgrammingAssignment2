@@ -1,5 +1,8 @@
-## makeCacheMatrix create an especial matrix containing functions 
-## to set/get the matrix and set/get the inverted matrix
+## This file contains both needed functions to complete the 
+## programming assignament 2
+
+## 1) makeCacheMatrix create an especial matrix containing functions 
+##    to set/get the matrix and set/get the inverted matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     inverted <- NULL
@@ -25,7 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Function to handle the caching on inverting matrix
+## 2) Function to compute the inverse of the special matrix created by 
+##    makeCacheMatrix and cache it.
 
 cacheSolve <- function(x, ...) {
     inverted = x$getInverted()
